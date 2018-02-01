@@ -1,2 +1,2 @@
-# GENIST_GUI
-GUI code for GENIST algorithm
+# GENIST-regression_tree_pipeline-GUI
+GUI code for GENIST and regression tree pipeline algorithms
