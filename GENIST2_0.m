@@ -1,6 +1,21 @@
-function GENIST2_0(genes_file,time_course_file,clustering_data_file,time_lapse,is_load_new_data,TF_file,symbol_file,is_reg_fc_th,is_reg_time_percent,n_levels,is_low_conn)
+function GENIST2_0(genes_file,time_course_file,clustering_data_file,time_lapse,TF_file,symbol_file,is_reg_fc_th,is_reg_time_percent,n_levels,is_low_conn,outfile)
 %%
 % Inference of Gene Regulatory Networks (GRNs) from spatio temporal data
+%
+% GENIST2_0(genes_file,time_course_file)
+% infers regulations among the genes provided in genes_file. The
+% regulations are calculated by applying a step of Bayesian Network
+% inference, which uses the data in time_course_file. 
+%
+% genes_file must be an excel file containing the list of genes to be
+% included in the network as a column.
+%
+% time_course_file must be an excel file containing expression data of
+% the genes across different time or developmental time points. Each
+% row must correspond to 1 gene. The file can contain any number of
+% genes, and GENIST selects the genes specified in genes_file.
+%
+% The names of the genes in all .xlsx files must be consistent.
 %
 %
 % GENIST2_0(genes_file,time_course_file,clustering_data_file)
@@ -9,13 +24,6 @@ function GENIST2_0(genes_file,time_course_file,clustering_data_file,time_lapse,i
 % groups the genes based on their coexpression in the clustering_file data
 % (which should be preferently a spatial dataset) followed by a second step
 % of a Bayesian Network inference, which uses the data in time_course_file.
-% genes_file must be an excel file containing the list of genes to be
-% included in the network as a column.
-%
-% time_course_file must be an excel file containing expression data of
-% the genes across different time or developmental time points. Each
-% row must correspond to 1 gene. The file can contain any number of
-% genes, and GENIST selects the genes specified in genes_file.
 %
 % clustering_data_file must be an excel file containing expression data
 % of the genes across different spacial confinements. Each
@@ -117,10 +125,11 @@ function GENIST2_0(genes_file,time_course_file,clustering_data_file,time_lapse,i
 global TF
 global symbol
 
-if nargin < 3
-    error('Not enough input arguments. Provide at least genes, time_course, and clustering_data.')
+if nargin < 2
+    error('Not enough input arguments. Provide at least genes, and time_course.')
 end
 
+is_load_new_data = true;
 if ~exist('is_load_new_data', 'var') || isempty(is_load_new_data)
     is_load_new_data = true;
 end
@@ -163,11 +172,21 @@ end
 
 if is_load_new_data
     time_course_file = dataset('XLSFile',char(time_course_file),'ReadObsNames',false);
-    clustering_data_file = dataset('XLSFile',char(clustering_data_file),'ReadObsNames',false);
     genes_file = dataset('XLSFile',char(genes_file),'ReadObsNames',false);
     
+    if ~exist('clustering_data_file', 'var') || isempty(clustering_data_file)
+        ID_C = cellstr(genes_file(:,1));
+        clust_data = ones(size(ID_C,1),1);
+    else
+        clustering_data_file = dataset('XLSFile',char(clustering_data_file),'ReadObsNames',false);
+        clust_data = double(clustering_data_file(:,2:end));
+        ID_C = clustering_data_file(:,1); %Var that stores the IDs from the original files
+        ID_C = cellstr(ID_C);
+
+    end
+    
     if ~exist('TF_file', 'var') || isempty(TF_file)
-        TF = genes_file;
+        TF = genes_file(:,1);
     else
         TF = dataset('XLSFile',char(TF_file),'ReadObsNames',false);
     end
@@ -184,12 +203,9 @@ else
 end
 
 temp_data = double(time_course_file(:,2:end));
-clust_data = double(clustering_data_file(:,2:end));
 
 ID_T = time_course_file(:,1); %Var that stores the IDs from the original files
 ID_T = cellstr(ID_T);
-ID_C = clustering_data_file(:,1); %Var that stores the IDs from the original files
-ID_C = cellstr(ID_C);
 
 genes = unique(genes_file(:,1));
 genes = cellstr(genes);
@@ -225,10 +241,10 @@ TF_vector = cellstr(TF);
 TF_in_genes_pos = ismember(genes,TF_vector)'; % find positions of the TFs
 TF_in_genes = genes(TF_in_genes_pos);
 
-if length(TF_in_genes) <= 10
+if length(TF_in_genes) <= 10 || size(clust_data,2) == 1
     n_clusters = 1;
 else
-    eva = evalclusters(clust_data_norm,'linkage','silhouette','distance','sqEuclidean','KList',floor(length(TF_in_genes)/10):floor(length(TF_in_genes)/5));
+    eva = evalclusters(clust_data_norm,'linkage','silhouette','distance','sqEuclidean','KList',2:floor(length(TF_in_genes)/5));
     n_clusters = eva.OptimalK;
 end
 
@@ -242,12 +258,41 @@ n_IDX = zeros(1,n_clusters);
 if n_clusters > 1
     for i = 1:n_clusters
         n_IDX(i) = sum(IDX==i);
-        genes_per_cluter(1:n_IDX(i),i) = genes(IDX == i);
+        genes_per_cluster(1:n_IDX(i),i) = genes(IDX == i);
     end
 else
-    genes_per_cluter = genes;
+    genes_per_cluster = genes;
     n_IDX = length(genes);
 end
+
+% Add symbol to the list of genes in each cluster %
+sym = cellstr(symbol); 
+genes_cluster = genes_per_cluster;
+genes_per_cluster_info = genes_per_cluster;
+
+for i = 1:n_clusters
+   for j = 1:n_IDX(i)
+        idx = ismember(sym(:,1),genes_cluster(j,i),'rows'); 
+        new_name = sym(idx,2);
+        if isempty(new_name)
+            %genes_per_cluster_info(j,i) = genes_per_cluster(j,i);
+        else
+            genes_per_cluster_info(j,i) = sym(idx,2);
+        end
+    end
+end
+
+genes_per_cluster_info = table(genes_per_cluster_info);
+genes_cluster = table(genes_cluster);
+
+if exist('clusters.xlsx', 'file') == 2
+  delete('clusters.xlsx')
+end
+
+filename = 'clusters.xlsx';
+writetable(genes_cluster,filename,'Sheet',1);
+writetable(genes_per_cluster_info,filename,'Sheet',2)
+
 %%
 hubs_AGI = {}; % create an empty cell array to store the names of the hubs of each cluster.
 my_AGI_clusters = {}; % create an empty cell array to store the names of all the genes in each cluster (all the genes that we are using, but ordered as they appear in each cluster)
@@ -257,8 +302,8 @@ pos_tracker = 1; % var to track how many genes we've gone through already after 
 %% Find the GRN for each cluster
 
 for i = 1:n_clusters
-    my_clust = genes_per_cluter(1:n_IDX(i),i);
-    ind_pos = ismember(ID_T,my_clust,'rows');
+    my_clust = genes_per_cluster(1:n_IDX(i),i);
+    ind_pos = ismember(ID_T,my_clust);
     g_int_temp = pf_temp_data(ind_pos,:); % select identified genes from the longitudinal data
     
     % find the symbol of each locus to plot the graph %
@@ -292,7 +337,7 @@ end
 
 if n_clusters > 1
     
-    hubs_pos = ismember(ID_T,hubs_AGI,'rows');
+    hubs_pos = ismember(ID_T,hubs_AGI);
     
     g_int_temp = pf_temp_data(hubs_pos,:); % select identified genes from the longitudinal data
     
@@ -303,7 +348,7 @@ if n_clusters > 1
     % Combine everything in one big network
     pos_ind = zeros(length(inter_clust_AGI),1);
     for i = 1:length(inter_clust_AGI)
-        hub_pos_i = ismember(my_AGI_clusters,inter_clust_AGI(i),'rows');
+        hub_pos_i = ismember(my_AGI_clusters,inter_clust_AGI(i));
         pos_ind(i) = find(hub_pos_i);
     end
     aux_network = zeros(size(final_network));
@@ -319,7 +364,7 @@ if n_clusters > 1
     gene_names = my_AGI_clusters;
     sym = cellstr(symbol);
     for i = 1:length(gene_names)
-        idx = ismember(sym(:,1),gene_names(i),'rows');
+        idx = ismember(sym(:,1),gene_names(i));
         new_name = sym(idx,2);
         if ~isempty(new_name)
             if length(new_name)>1
@@ -354,7 +399,7 @@ else
     gene_names = my_AGI_clusters;
     sym = cellstr(symbol);
     for i = 1:length(gene_names)
-        idx = ismember(sym(:,1),gene_names(i),'rows');
+        idx = ismember(sym(:,1),gene_names(i));
         new_name = sym(idx,2);
         if ~isempty(new_name)
             if length(new_name)>1
@@ -370,5 +415,5 @@ end
 % Convert the matrix that is storing the network into a
 % cytoscape-compatible table. Save the table in a text file called
 % cytoscape_table in the current directory.
-matrix_to_cytoscape_table2_0(gene_names,final_network, final_sign_network);
+matrix_to_cytoscape_table2_0(gene_names,final_network, final_sign_network,outfile);
 end
