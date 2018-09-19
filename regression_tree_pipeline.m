@@ -188,7 +188,6 @@ if ~exist('numclusters', 'var') || isempty(numclusters)
     final_table = readtable(char(filename_results),'ReadVariableNames',false);
     unique_edges = unique(table2cell(final_table));
     writetable(cell2table(unique_edges),char(filename_results),'WriteVariableNames',false)
-    view(bg2)
 else
     currentindex = 1;
     for i = 1:numclusters
@@ -205,7 +204,6 @@ else
         %just one text file will contain the entire network
         if ~isempty(bg2)
             biograph_to_text(bg2,istimecourse,char(filename_results))
-            view(bg2)
         end
     end
     %connect the clusters, if applicable
@@ -213,15 +211,13 @@ else
         [~,~,bg2,~]=run_regressiontree(expression_data,[],symbol,istimecourse,clusterhub_vec,[],timecols,timethreshold,edgenumber);
         %print results
         biograph_to_text(bg2,istimecourse,char(filename_results));
-        view(bg2)
     end
     
     %there may be duplicate edges in the final file, so we need to remove
     %them
-    final_table = table2cell(readtable(char(filename_results),'ReadVariableNames',false));
-    final_table_merged = strcat(final_table(:,1),final_table(:,3)); 
-    [~,unique_edges_idx,~] = unique(final_table_merged); 
-    unique_edges = final_table(unique_edges_idx,:); 
+    view(bg2)
+    final_table = readtable(char(filename_results),'ReadVariableNames',false,'Delimeter','\n');
+    unique_edges = unique(final_table);
     writetable(cell2table(unique_edges),char(filename_results),'WriteVariableNames',false)
     
 end
