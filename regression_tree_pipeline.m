@@ -218,6 +218,6 @@ else
     view(bg2)
     final_table = readtable(char(filename_results),'ReadVariableNames',false,'Delimeter','\n');
     unique_edges = unique(final_table);
-    writetable(cell2table(unique_edges),char(filename_results),'WriteVariableNames',false)
+    writetable(unique_edges,char(filename_results),'WriteVariableNames',false)
     
 end
