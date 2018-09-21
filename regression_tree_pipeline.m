@@ -185,9 +185,9 @@ end
 if ~exist('numclusters', 'var') || isempty(numclusters)
     [~,~,bg2,~] = run_regressiontree(expression_data,[],symbol, istimecourse,[],[],timecols,timethreshold,edgenumber);
     biograph_to_text(bg2,istimecourse,filename_results);
-    final_table = readtable(char(filename_results),'ReadVariableNames',false);
-    unique_edges = unique(table2cell(final_table));
-    writetable(cell2table(unique_edges),char(filename_results),'WriteVariableNames',false)
+    final_table = readtable(char(filename_results),'ReadVariableNames',false,'Delimeter','\n');
+    unique_edges = unique(final_table));
+    writetable(unique_edges,char(filename_results),'WriteVariableNames',false)
 else
     currentindex = 1;
     for i = 1:numclusters
@@ -213,8 +213,7 @@ else
         biograph_to_text(bg2,istimecourse,char(filename_results));
     end
     
-    %there may be duplicate edges in the final file, so we need to remove
-    %them
+    %there may be duplicate edges in the final file, so we need to remove them
     view(bg2)
     final_table = readtable(char(filename_results),'ReadVariableNames',false,'Delimeter','\n');
     unique_edges = unique(final_table);
