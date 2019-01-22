@@ -1,5 +1,5 @@
 # TuxNet
-Matlab App to process raw RNA-seq data and infer GRNs from the processed data.
+Matlab App to process raw RNA-seq data and infer GRNs from the processed data. Published and maintained by Sozzani Lab at North Carolina State University.
 
 The use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed (R2017b ONLY).
 
