@@ -7,7 +7,7 @@ AAAA
 
 ## Local Installation and Use
 
-The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed (**R2017b ONLY**).
+The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed **(R2017b ONLY)**.
 
 [GENIE3](https://github.com/jmlingeman/Network-Inference-Workspace/tree/master/algorithms/genie3) must be installed before the RTP-STAR tab can be run using TuxNet. To install GENIE3, download the MATLAB .zip folder, unzip the files, and follow the installation instructions included in the documentation.
 
