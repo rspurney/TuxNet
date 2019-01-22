@@ -4,7 +4,9 @@ Matlab App to process raw RNA-seq data and infer GRNs from the processed data. P
 ## Remote Access
 
 TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is provided below.
+
 ![Remote Access Tutorial](SampleVideo_1280x720_1mb.mp4)
+
 First, download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/). 
 
 ## Local Installation and Use
