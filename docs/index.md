@@ -1,12 +1,12 @@
-#TuxNet
+#TuxNet#
 
 Matlab App to process raw RNA-seq data and infer GRNs from the processed data. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
 
-##Remote Access
+##Remote Access#3
 
 AAAA
 
-##Local Installation and Use
+##Local Installation and Use##
 
 The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed (**R2017b ONLY**).
 
