@@ -7,7 +7,8 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 ![Remote Access Tutorial](SampleVideo_1280x720_1mb.mp4)
 
-First, download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/). 
+1. Download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/)
+1. In the Partner ID field under the Control Remote Computer section of the app, enter **1332421847**
 
 ## Local Installation and Use
 
