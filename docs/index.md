@@ -7,8 +7,21 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 ![Remote Access Tutorial](SampleVideo_1280x720_1mb.mp4)
 
-1. Download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/)
-1. In the Partner ID field under the Control Remote Computer section of the app, enter **1332421847**
+**Partner ID: 1332421847**
+
+**TeamViewer Authentication Password: TuxNet**
+
+**Mac Account Name: TuxNet**
+
+**Mac Account Password: TuxNet**
+
+1. Download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/).
+1. In the Partner ID field under the Control Remote Computer section of the app, enter **1332421847**.
+1. In the TeamViewer Authentication popup, enter **TuxNet** as the password.
+
+    TeamViewer will now attempt to remotely connect. If the computer is currently in use, TeamViewer will prompt the current user to either accept or deny your remote access request. If they deny your request, try to log in again at a later time.
+
+1. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
 
 ## Local Installation and Use
 
