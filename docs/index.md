@@ -23,7 +23,11 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 1. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
 
-## Local Installation and Use
+## GENIST Tutorial
+
+## RTP-STAR Tutorial
+
+## Local Installation
 
 The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed **(R2017b ONLY)**.
 
