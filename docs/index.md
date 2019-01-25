@@ -1,6 +1,12 @@
 # TuxNet
 Matlab App to process raw RNA-seq data and infer GRNs from the processed data. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
 
+# Table of Contents
+1. [Remote Access](#remote-access)
+2. [GENIST Tutorial](#genist-tutorial)
+3. [RTP-STAR Tutorial](#rtp-star-tutorial)
+4. [Local Installation](#local-installation)
+
 ## Remote Access
 
 TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is provided below.
