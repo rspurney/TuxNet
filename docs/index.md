@@ -3,8 +3,8 @@ Matlab App to process raw RNA-seq data and infer GRNs from the processed data. P
 
 # Table of Contents
 1. [Remote Access](#remote-access)
-2. [GENIST](#genist-tutorial)
-3. [RTP-STAR](#rtp-star-tutorial)
+2. [GENIST](#genist)
+3. [RTP-STAR](#rtp-star)
 4. [Local Installation](#local-installation)
 
 ## Remote Access
