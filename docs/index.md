@@ -31,6 +31,7 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
     TeamViewer will now attempt to remotely connect. If the computer is currently in use, TeamViewer will prompt the current user to either accept or deny your remote access request. If they deny your request, try to log in again at a later time.
 
 1. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
+1. If the login information is entered correctly, you should see a Mac desktop screen.
 
 ## TUX
 
