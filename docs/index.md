@@ -3,9 +3,10 @@ Matlab App to process raw RNA-seq data and infer GRNs from the processed data. P
 
 # Table of Contents
 1. [Remote Access](#remote-access)
-2. [GENIST](#genist)
-3. [RTP-STAR](#rtp-star)
-4. [Local Installation](#local-installation)
+2. [TUX](#tux)
+3. [GENIST](#genist)
+4. [RTP-STAR](#rtp-star)
+5. [Local Installation](#local-installation)
 
 ## Remote Access
 
@@ -29,9 +30,17 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 1. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
 
+## TUX
+
+(TUX tutorial)
+
 ## GENIST
 
+(GENIST tutorial)
+
 ## RTP-STAR
+
+(RTP-STAR tutorial)
 
 ## Local Installation
 
