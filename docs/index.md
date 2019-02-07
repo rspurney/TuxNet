@@ -32,9 +32,9 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 1. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
 1. If the login information is entered correctly, you should see a Mac desktop screen. From here, import the files you want to run in TuxNet via the Files & Extras tab at the top of the screen.
-1. Double-click on the TuxNet App shortcut on the desktop. Matlab will open, and then TuxNet will open. From here, follow tab specific instructions ( [TUX](#tux) [GENIST](#genist) [RTP-STAR](#rtp-star) ) to run TuxNet and process your data.
+1. Double-click on the TuxNet App shortcut on the desktop. Matlab will open, and then TuxNet will open. From here, follow tab specific instructions ( [TUX](#tux), [GENIST](#genist), [RTP-STAR](#rtp-star) ) to run TuxNet and process your data.
 1. When you are done processing your data, transfer the results files you want back to your local computer via the Files & Extras tab at the top of the screen.
-1. Finally, once you have transferred all of the data you want to keep back to your local computer, delete all imported and generated files from the remote access TuxNet computer.
+1. Finally, once you have transferred all of the data you want to keep back to your local computer, delete all imported and generated files from the remote access TuxNet computer and close TuxNet and Matlab.
 
 ## TUX
 
