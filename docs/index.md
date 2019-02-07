@@ -57,7 +57,7 @@ The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger 
 
 [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation.
 
-To run TuxNet, download all the files from this the [TuxNet GitHub page](https://github.com/rspurney/TuxNet) as a .zip folder, and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then run the TuxNet.mlapp file.
+To run TuxNet, download all of the files from the [project repository](https://github.com/rspurney/TuxNet) as a .zip folder, and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then run the TuxNet.mlapp file.
 
 More details on running the software are provided in the following manuscript:
 TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks
