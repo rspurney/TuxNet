@@ -64,7 +64,7 @@ TuxNet: A simple interface to process RNA sequencing data and infer gene regulat
 
 ## Contact Info
 
-Please contact [Ryan Spurney](mailto:rjspurne@ncsu.edu) or [Dr. Ross Sozzani](mailto:rsozzan@ncsu.edu) with any questions or issues.
+Please contact Ryan Spurney at <rjspurne@ncsu.edu> or Dr. Ross Sozzani at <rsozzan@ncsu.edu> with any questions or issues.
 
 ----------------------------------------------------------------------------------------------------------------------------
 REFERENCES:
