@@ -55,7 +55,7 @@ The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger 
 
 [GENIE3](https://github.com/jmlingeman/Network-Inference-Workspace/tree/master/algorithms/genie3) must be installed before the RTP-STAR tab can be run using TuxNet. To install GENIE3, download the MATLAB .zip folder, unzip the files, and follow the installation instructions included in the documentation.
 
-[HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation.
+[HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX tab can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation.
 
 To run TuxNet, download all of the files from the [project repository](https://github.com/rspurney/TuxNet) as a .zip folder, and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then run the TuxNet.mlapp file.
 
