@@ -56,7 +56,6 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 1. Sample Group 1 and Sample Group 2 should be the same as the names of the sample group folders in your inputs folder. For the example image shown above, the user could choose Sample Group 1 as T0 and Sample Group 2 as T2 to compare T0 to T2. Alternatively, they could select Sample Group 2 as T1,T2 to compare T0 to compare T0 to T1 and T2.
 1. Output files will be moved to the same folder the inputs files are located in when the run is complete.
 
-
 ## GENIST
 
 (GENIST tutorial)
