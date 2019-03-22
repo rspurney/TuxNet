@@ -27,10 +27,7 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 1. Download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/).
 2. In the Partner ID field under the Control Remote Computer section of the app, enter **1332421847**.
-3. In the TeamViewer Authentication popup, enter **TuxNet** as the password.
-
-    TeamViewer will now attempt to remotely connect. If the computer is currently in use, TeamViewer will prompt the current user to either accept or deny your remote access request. If they deny your request, try to log in again at a later time.
-
+3. In the TeamViewer Authentication popup, enter **TuxNet** as the password. TeamViewer will now attempt to remotely connect. If the computer is currently in use, TeamViewer will prompt the current user to either accept or deny your remote access request. If they deny your request, try to log in again at a later time.
 4. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
 5. If the login information is entered correctly, you should see a Mac desktop screen. From here, import the files you want to run in TuxNet via the Files & Extras tab at the top of the screen.
 6. Double-click on the TuxNet App shortcut on the desktop. Matlab will open, and then TuxNet will open. From here, follow tab specific instructions ([TUX](#tux), [GENIST](#genist), [RTP-STAR](#rtp-star)) to run TuxNet and process your data.
