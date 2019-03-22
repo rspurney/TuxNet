@@ -39,9 +39,20 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 
 ## TUX
 
+The TUX tab allows users to process raw RNA-seq data and to perform differentially expressed gene (DEG) comparisons between sample groups. A tutorial video is provided below.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0_v7WvRm418" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br />
+
+1. Open the TuxNet app via shortcut or through Matlab.
+1. Select your inputs folder under the Cleaning Options section. The raw data must be in the **.fastq.gz** file format. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below.
+
+![Correct Inputs](https://rspurney.github.com/TuxNet/docs/media/inputs.png)
+
+1. Double-click on the TuxNet App shortcut on the desktop. Matlab will open, and then TuxNet will open. From here, follow tab specific instructions ([TUX](#tux), [GENIST](#genist), [RTP-STAR](#rtp-star)) to run TuxNet and process your data.
+1. When you are done processing your data, transfer the results files you want back to your local computer via the Files & Extras tab at the top of the screen.
+1. Finally, once you have transferred all of the data you want to keep back to your local computer, delete all imported and generated files from the remote access TuxNet computer and close TuxNet and Matlab.
 
 ## GENIST
 
