@@ -26,16 +26,16 @@ TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is pr
 **Mac Account Password: TuxNet**
 
 1. Download and install [TeamViewer](https://www.teamviewer.com/en-us/download/windows/).
-1. In the Partner ID field under the Control Remote Computer section of the app, enter **1332421847**.
-1. In the TeamViewer Authentication popup, enter **TuxNet** as the password.
+2. In the Partner ID field under the Control Remote Computer section of the app, enter **1332421847**.
+3. In the TeamViewer Authentication popup, enter **TuxNet** as the password.
 
     TeamViewer will now attempt to remotely connect. If the computer is currently in use, TeamViewer will prompt the current user to either accept or deny your remote access request. If they deny your request, try to log in again at a later time.
 
-1. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
-1. If the login information is entered correctly, you should see a Mac desktop screen. From here, import the files you want to run in TuxNet via the Files & Extras tab at the top of the screen.
-1. Double-click on the TuxNet App shortcut on the desktop. Matlab will open, and then TuxNet will open. From here, follow tab specific instructions ([TUX](#tux), [GENIST](#genist), [RTP-STAR](#rtp-star)) to run TuxNet and process your data.
-1. When you are done processing your data, transfer the results files you want back to your local computer via the Files & Extras tab at the top of the screen.
-1. Finally, once you have transferred all of the data you want to keep back to your local computer, delete all imported and generated files from the remote access TuxNet computer and close TuxNet and Matlab.
+4. If TeamViewer has successfully connected, you should see a Mac login screen. Enter **TuxNet** as both the name and password.
+5. If the login information is entered correctly, you should see a Mac desktop screen. From here, import the files you want to run in TuxNet via the Files & Extras tab at the top of the screen.
+6. Double-click on the TuxNet App shortcut on the desktop. Matlab will open, and then TuxNet will open. From here, follow tab specific instructions ([TUX](#tux), [GENIST](#genist), [RTP-STAR](#rtp-star)) to run TuxNet and process your data.
+7. When you are done processing your data, transfer the results files you want back to your local computer via the Files & Extras tab at the top of the screen.
+8. Finally, once you have transferred all of the data you want to keep back to your local computer, delete all imported and generated files from the remote access TuxNet computer and close TuxNet and Matlab.
 
 ## TUX
 
@@ -46,15 +46,15 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 <br />
 
 1. Open the TuxNet app via shortcut or through Matlab.
-1. Select your inputs folder under the Cleaning Options section. The raw data must be in the **.fastq.gz** file format. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
+2. Select your inputs folder under the Cleaning Options section. The raw data must be in the **.fastq.gz** file format. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
 
 <img src="https://github.com/rspurney/TuxNet/blob/master/docs/media/correct_inputs.JPG" alt="Correct Inputs" width="500"/>
 
-1. Check the remaining options in the Cleaning Options and Tuxedo Options sections: Quality Threshold, Min Sequence Length, Window-Size, Threads, Reference Genome, Library Type, and FASTA File. Default values are preselected for these options so TUX can be run without changing any of them.
-1. Press the Run button in the bottom left corner to process the raw data. Execution time depends on file size and quantity, but generally takes several hours. If any errors occur, please contact us using the information provided [here](#contact info).
-1. To compare DEGs between sample groups, fill in the TuxOP Options section. FC Threshold, FDR Threshold, TF File, and Gene Names File are preselected by default.
-1. Sample Group 1 and Sample Group 2 should be the same as the names of the sample group folders in your inputs folder. For the example image shown above, the user could choose Sample Group 1 as T0 and Sample Group 2 as T2 to compare T0 to T2. Alternatively, they could select Sample Group 2 as T1,T2 to compare T0 to compare T0 to T1 and T2.
-1. Output files will be moved to the same folder the inputs files are located in when the run is complete.
+3. Check the remaining options in the Cleaning Options and Tuxedo Options sections: Quality Threshold, Min Sequence Length, Window-Size, Threads, Reference Genome, Library Type, and FASTA File. Default values are preselected for these options so TUX can be run without changing any of them.
+4. Press the Run button in the bottom left corner to process the raw data. Execution time depends on file size and quantity, but generally takes several hours. If any errors occur, please contact us using the information provided [here](#contact info).
+5. To compare DEGs between sample groups, fill in the TuxOP Options section. FC Threshold, FDR Threshold, TF File, and Gene Names File are preselected by default.
+6. Sample Group 1 and Sample Group 2 should be the same as the names of the sample group folders in your inputs folder. For the example image shown above, the user could choose Sample Group 1 as T0 and Sample Group 2 as T2 to compare T0 to T2. Alternatively, they could select Sample Group 2 as T1,T2 to compare T0 to compare T0 to T1 and T2.
+7. Output files will be moved to the same folder the inputs files are located in when the run is complete.
 
 ## GENIST
 
