@@ -45,9 +45,9 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 1. Open the TuxNet app via shortcut or through Matlab.
 2. Select your inputs folder under the Cleaning Options section. The raw data must be in the **.fastq.gz** file format. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
 
-
 <img src="https://github.com/rspurney/TuxNet/blob/master/docs/media/correct_inputs.JPG" alt="Correct Inputs" width="500"/>
 
+<br />
 
 3. Check the remaining options in the Cleaning Options and Tuxedo Options sections: Quality Threshold, Min Sequence Length, Window-Size, Threads, Reference Genome, Library Type, and FASTA File. Default values are prefilled for these options so TUX can be run without changing any of them.
 4. Press the Run button in the bottom left corner to process the raw data. Execution time depends on file size and quantity, but generally takes several hours. If any errors occur, please contact us using the information provided [here](#contact-info).
