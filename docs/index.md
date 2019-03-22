@@ -50,10 +50,10 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 
 <img src="https://github.com/rspurney/TuxNet/blob/master/docs/media/correct_inputs.JPG" alt="Correct Inputs" width="500"/>
 
-3. Check the remaining options in the Cleaning Options and Tuxedo Options sections: Quality Threshold, Min Sequence Length, Window-Size, Threads, Reference Genome, Library Type, and FASTA File. Default values are preselected for these options so TUX can be run without changing any of them.
-4. Press the Run button in the bottom left corner to process the raw data. Execution time depends on file size and quantity, but generally takes several hours. If any errors occur, please contact us using the information provided [here](#contact info).
-5. To compare DEGs between sample groups, fill in the TuxOP Options section. FC Threshold, FDR Threshold, TF File, and Gene Names File are preselected by default.
-6. Sample Group 1 and Sample Group 2 should be the same as the names of the sample group folders in your inputs folder. For the example image shown above, the user could choose Sample Group 1 as T0 and Sample Group 2 as T2 to compare T0 to T2. Alternatively, they could select Sample Group 2 as T1,T2 to compare T0 to compare T0 to T1 and T2.
+3. Check the remaining options in the Cleaning Options and Tuxedo Options sections: Quality Threshold, Min Sequence Length, Window-Size, Threads, Reference Genome, Library Type, and FASTA File. Default values are prefilled for these options so TUX can be run without changing any of them.
+4. Press the Run button in the bottom left corner to process the raw data. Execution time depends on file size and quantity, but generally takes several hours. If any errors occur, please contact us using the information provided [here](#contact-info).
+5. To compare DEGs between sample groups, fill in the TuxOP Options section. FC Threshold, FDR Threshold, TF File, and Gene Names File are prefilled by default.
+6. Sample Group 1 and Sample Group 2 should chosen from the names of the sample group folders in your inputs folder. For the example image shown above, the user could choose Sample Group 1 as T0 and Sample Group 2 as T2 to compare T0 to T2. Alternatively, they could select Sample Group 2 as T1,T2 to compare T0 to compare T0 to T1 and T2.
 7. Output files will be moved to the same folder the inputs files are located in when the run is complete.
 
 ## GENIST
