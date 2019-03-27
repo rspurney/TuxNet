@@ -43,7 +43,7 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 <br />
 
 1. Open the TuxNet app via shortcut or through Matlab.
-2. Select your inputs folder under the Cleaning Options section. The raw data must be in the **.fastq.gz** file format. The data does not necessarily need to be RNA-seq output as shown in the tutorial video. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
+2. Select your inputs folder under the Cleaning Options section. The raw data file format must be either **.fastq** or **.fastq.gz**. The data does not necessarily need to be RNA-seq output as shown in the tutorial video. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
 
     <img src="media/correct_inputs.JPG" alt="Correct Inputs" width="500"/>
 
