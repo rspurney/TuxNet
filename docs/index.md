@@ -42,7 +42,7 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 
 <br />
 
-1. Open the TuxNet app via shortcut or through Matlab.
+1. Open the TuxNet app via shortcut or through Matlab and select the TUX tab.
 2. Select your inputs folder under the Cleaning Options section. The raw data file format must be either **.fastq** or **.fastq.gz**. The data does not necessarily need to be RNA-seq output as shown in the tutorial video. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
 
     <img src="media/correct_inputs.JPG" alt="Correct Inputs" width="500"/>
@@ -56,7 +56,18 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 
 ## GENIST
 
-(GENIST tutorial)
+The GENIST tab allows users to infer GRNs from lists of DEGs and expression tables such as those returned by the TUX tab. A tutorial video is provided below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_qulRurqmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br />
+
+1. Open the TuxNet app via shortcut or through Matlab and select the GENIST tab.
+2. Select the required Input Files: Genes File, Time Course File, and Output File Name. Clustering File, TF File, and Gene Name File are optional. Output File Name is chosen to be cytoscape_table.txt by default.
+3. Check the Parameters section and decide whether to keep the default values or change the values for Time Lapse, Reg Fold Change Threshold, Reg Time Percent, Discretization Levels, and Reg Bottom Percentage.
+4. Press the Run button to perform the analysis. Execution time should be under ten minutes. If any errors occur, please contact us using the information provided [here](#contact-info).
+5. Results can be found in the current working Matlab directory. For remote access users, this is Desktop/TuxNet/TuxNet-HISAT2. The output files are cytoscape_table.txt, clusters.xlsx, and DATA_GENIST.mat.
+6. cytoscape_table.txt can be imported to Cytoscape for further network visualization and analysis.
 
 ## RTP-STAR
 
