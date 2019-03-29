@@ -65,7 +65,7 @@ The GENIST tab allows users to infer GRNs from lists of DEGs and expression tabl
 1. Open the TuxNet app via shortcut or through Matlab and select the GENIST tab.
 2. Select the required Input Files: Genes File, Time Course File, and Output File Name. Clustering File, TF File, and Gene Name File are optional. Output File Name is chosen to be cytoscape_table.txt by default.
 3. Check the Parameters section and decide whether to keep the default values or change the values for Time Lapse, Reg Fold Change Threshold, Reg Time Percent, Discretization Levels, and Reg Bottom Percentage.
-4. Press the Run button to perform the analysis. Execution time should be under ten minutes. If any errors occur, please contact us using the information provided [here](#contact-info).
+4. Press the Run button to perform the analysis. If any errors occur, please contact us using the information provided [here](#contact-info).
 5. Results can be found in the current working Matlab directory. For remote access users, this is Desktop/TuxNet/TuxNet-HISAT2. The output files are cytoscape_table.txt, clusters.xlsx, and DATA_GENIST.mat.
 6. cytoscape_table.txt can be imported to Cytoscape for further network visualization and analysis.
 
@@ -80,7 +80,7 @@ The RTP-STAR tab allows users to infer GRNs from lists of DEGs and expression ta
 1. Open the TuxNet app via shortcut or through Matlab and select the RTP-STAR tab.
 2. Select the required Input Files: Genes File, Gene Expression File, and Results File Name. Gene Name File, TF File, Clustering File, and Time Course File are optional. Results File name is chosen to be biograph.txt by default.
 3. Check the Parameters section and decide whether to keep the default values or change the values for Connect Hubs, Clustering Seed, Max Number of Clusters, Clustering File Name, Time Threshold, and Low/Medium/High Number of Transcription Factors. The Clustering and Time Course Options are only available when using a corresponding optional file.
-4. Press the Run button to perform the analysis. Execution time should be under ten minutes. If any errors occur, please contact us using the information provided [here](#contact-info).
+4. Press the Run button to perform the analysis. If any errors occur, please contact us using the information provided [here](#contact-info).
 5. Results can be found in the current working Matlab directory. For remote access users, this is Desktop/TuxNet/TuxNet-HISAT2. The output files are biograph.txt and clusters.csv (if clustering is used).
 6. biograph.txt can be imported to Cytoscape for further network visualization and analysis.
 
