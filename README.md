@@ -1,7 +1,9 @@
 # TuxNet
 Matlab App to process raw RNA-seq data and infer GRNs from the processed data. Published and maintained by Sozzani Lab at North Carolina State University.
 
-The use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed (R2017b ONLY).
+Visit https://rspurney.github.io/TuxNet/ for tutorials on remotely accessing and running TuxNet.
+
+The use of TuxNet locally requires a 64-bit computer running Mac OS X (10.4 Tiger or later), with Matlab installed (R2017b ONLY).
 
 GENIE3, available from https://github.com/aertslab/GENIE3, must be also installed before RTP-STAR can be run using TuxNet. To install GENIE3, download the MATLAB .zip folder, unzip the files, and follow the installation instructions included in the documentation.
 
