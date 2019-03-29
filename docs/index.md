@@ -58,7 +58,7 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 
 The GENIST tab allows users to infer GRNs from lists of DEGs and expression tables such as those returned by the TUX tab. A tutorial video is provided below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_qulRurqmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TH-pBKeXD2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br />
 
