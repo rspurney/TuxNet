@@ -71,7 +71,18 @@ The GENIST tab allows users to infer GRNs from lists of DEGs and expression tabl
 
 ## RTP-STAR
 
-(RTP-STAR tutorial)
+The RTP-STAR tab allows users to infer GRNs from lists of DEGs and expression tables such as those returned by the TUX tab. A tutorial video is provided below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/esVSttiefdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br />
+
+1. Open the TuxNet app via shortcut or through Matlab and select the RTP-STAR tab.
+2. Select the required Input Files: Genes File, Gene Expression File, and Results File Name. Gene Name File, TF File, Clustering File, and Time Course File are optional. Results File name is chosen to be biograph.txt by default.
+3. Check the Parameters section and decide whether to keep the default values or change the values for Connect Hubs, Clustering Seed, Max Number of Clusters, Clustering File Name, Time Threshold, and Low/Medium/High Number of Transcription Factors. The Clustering and Time Course Options are only available when using a corresponding optional file.
+4. Press the Run button to perform the analysis. Execution time should be under ten minutes. If any errors occur, please contact us using the information provided [here](#contact-info).
+5. Results can be found in the current working Matlab directory. For remote access users, this is Desktop/TuxNet/TuxNet-HISAT2. The output files are biograph.txt and clusters.csv (if clustering is used).
+6. biograph.txt can be imported to Cytoscape for further network visualization and analysis.
 
 ## Local Installation
 
