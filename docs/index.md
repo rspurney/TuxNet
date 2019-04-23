@@ -1,5 +1,5 @@
 # TuxNet
-Matlab app to process raw RNA-seq data and infer gene regulatory networks from the processed data. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
+Matlab app to process raw RNA-seq data and infer gene regulatory networks. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
 
 # Table of Contents
 1. [Remote Access](#remote-access)
@@ -12,6 +12,8 @@ Matlab app to process raw RNA-seq data and infer gene regulatory networks from t
 ## Remote Access
 
 TuxNet can be remotely accessed and run using TeamViewer. A tutorial video is provided below.
+
+**Please remember that you are accessing a shared computer. We ask that you do not leave the remote access session open when you are not using it since this blocks other users from being able to run their data. Additionally, any data that you import to or create on this computer can and will be deleted for space. Make sure to export any data you need before logging off.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cUXHW89-wi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
