@@ -90,7 +90,7 @@ The RTP-STAR tab allows users to infer GRNs from lists of DEGs and expression ta
 
 The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger or later) with Matlab installed **(R2017b ONLY)**.
 
-[GENIE3](https://github.com/aertslab/GENIE3) must be installed before the RTP-STAR tab can be run using TuxNet. To install GENIE3, download the MATLAB .zip folder, unzip the files, and follow the installation instructions included in the documentation.
+[GENIE3](https://github.com/vahuynh/GENIE3) must be installed before the RTP-STAR tab can be run using TuxNet. To install GENIE3, download the MATLAB .zip folder, unzip the files, and follow the installation instructions included in the documentation.
 
 [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX tab can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation.
 
