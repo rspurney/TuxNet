@@ -1,11 +1,11 @@
+*.o
+.Rhistory
+genie3
 .DS_Store
-TuxNet-Tuxedo/.DS_Store
 TuxNet-HISAT2/.DS_Store
 TuxNet-HISAT2/hisat2-2.1.0
-genie3
 TuxNet-HISAT2/genome.fa
 TuxNet-HISAT2/bin
-*.o
 TuxNet-HISAT2/samtools-1.2/misc/md5fa
 TuxNet-HISAT2/samtools-1.2/misc/ace2sam
 TuxNet-HISAT2/samtools-1.2/htslib-1.2.1/libhts.a
@@ -26,4 +26,3 @@ TuxNet-HISAT2/samtools-1.2/test/vcf-miniview
 TuxNet-HISAT2/samtools-1.2/version.h
 TuxNet-HISAT2/samtools-1.2/test/split/test_filter_header_rg
 TuxNet-HISAT2/samtools-1.2/test/merge/test_trans_tbl_init
-.Rhistory
