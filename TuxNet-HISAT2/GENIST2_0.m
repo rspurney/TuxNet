@@ -415,5 +415,5 @@ end
 % Convert the matrix that is storing the network into a
 % cytoscape-compatible table. Save the table in a text file called
 % cytoscape_table in the current directory.
-matrix_to_cytoscape_table2_0(gene_names,final_network, final_sign_network);
+matrix_to_cytoscape_table2_0(gene_names, final_network, final_sign_network, outfile);
 end

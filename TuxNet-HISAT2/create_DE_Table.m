@@ -14,7 +14,7 @@ n_cond = length(mk);
 n_comp_vect = 1:n_cond-1;
 n_comp = sum(n_comp_vect);
 
-[~,expression,gene_ID,~,q] = create_Exp_Table(n_genes,n_cond,n_comp,mk,filename);
+[~,expression,gene_ID,~,q] = create_Exp_Table(n_genes, n_cond, n_comp, mk, filename);
 
 enr1 = zeros(n_genes,n_comp);
 enr2 = zeros(n_genes,n_comp);

@@ -205,6 +205,7 @@ else
         if ~isempty(bg2)
             biograph_to_text(bg2,istimecourse,char(filename_results))
         end
+        view(bg2) % Biograph for each cluster
     end
     %connect the clusters, if applicable
     if connecthubs

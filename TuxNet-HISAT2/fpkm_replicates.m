@@ -9,7 +9,7 @@ T2_ID = T2{:,{'tracking_id'}};
 [T_ID,i1rep,i2] = intersect(table2cell(Trep(:,1)),T2_ID) ;
 TT_ID = table(T_ID,'VariableNames',{'tracking_id'});
 TTrep = Trep(i1rep,2:end);
-TT2 = table(T2_FPKM(i2),'VariableNames',cellstr(sample2name));
+TT2 = table(T2_FPKM(i2), 'VariableNames', cellstr(sample2name));
 T = [TT_ID TTrep TT2];
 
 delete 'FPKM_replicates.xlsx'

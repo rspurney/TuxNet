@@ -1,4 +1,4 @@
-function matrix_to_cytoscape_table2_0(symbols,network,sign_network)
+function matrix_to_cytoscape_table2_0(symbols, network, sign_network, outfile)
 
 n_genes = size(network,1);
 source = {};
@@ -26,4 +26,4 @@ end
 width = edge';
 sign = signs';
 T = table(source,target,width,sign);
-writetable(T,'cytoscape_table','Delimiter','tab');
+writetable(T, outfile, 'Delimiter', 'tab');
