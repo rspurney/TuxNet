@@ -1,4 +1,5 @@
 *.o
+*.fastq
 .Rhistory
 genie3
 .DS_Store
