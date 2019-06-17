@@ -45,7 +45,7 @@ The TUX tab allows users to process raw RNA-seq data and to perform differential
 <br />
 
 1. Open the TuxNet app via shortcut or through Matlab and select the TUX tab.
-2. Select your inputs folder under the Cleaning Options section. The raw data file format must be either **.fastq** or **.fastq.gz**. **The file and folder names must not begin with numbers.** The data does not necessarily need to be RNA-seq output as shown in the tutorial video. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
+2. Select your inputs folder under the Cleaning Options section. The raw data file format must be either **.fastq** or **.fastq.gz**. Do not have both zipped and unzipped versions of the same files in your inputs folders or TuxNet will attempt to process both versions. **The file and folder names must not begin with numbers.** The data does not necessarily need to be RNA-seq output as shown in the tutorial video. These raw files must be organized into folders by sample groug, and all of these sample group folders must be placed inside a top level folder. An example of correct file organization is shown below. The user would select the "Data" folder as their input folder in TuxNet to run the raw data from sample groups T0, T1, and T2.
 
     <img src="media/correct_inputs.JPG" alt="Correct Inputs" width="500"/>
 
@@ -92,7 +92,7 @@ The local use of TuxNet requires a 64-bit computer running Mac OS X (10.4 Tiger 
 
 [GENIE3](https://github.com/jmlingeman/Network-Inference-Workspace/tree/master/algorithms/genie3) must be installed before the RTP-STAR tab can be run using TuxNet. To install GENIE3, download the top level .zip folder called Network-Inference-Workspace, unzip the files, and move Network-Inference-Workspace/algorithms/genie3 to a permanent location on your computer. The included README.txt will give detailed instructions on completing the installation. Make sure to add the genie3 folder with subfolders to your MATLAB path and to compile rtenslearn_c.c using the MATLAB 'mex' command.
 
-[HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX tab can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation.
+[HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX tab can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation. Make sure to add the HISAT2 folder to your MATLAB path.
 
 To run TuxNet, download all of the files from the [project repository](https://github.com/rspurney/TuxNet) as a .zip folder, and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then run the TuxNet.mlapp file.
 
