@@ -1,4 +1,4 @@
-# Unfortunately, TuxNet access via TeamViewer has been permanently disabled. A new method for accessing TuxNet online is currently in development and will be described here once completed.
+# Unfortunately, TuxNet access via TeamViewer has been permanently disabled. A new method for accessing TuxNet online is currently in development and will be described here once completed. TuxNet can still be downloaded for local use via the Github link on this page.
 
 # TuxNet
 Matlab app to process raw RNA-seq data and infer gene regulatory networks. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
