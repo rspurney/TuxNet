@@ -1,5 +1,4 @@
 *.o
-*.fastq
 *.ht2
 .Rhistory
 genie3
