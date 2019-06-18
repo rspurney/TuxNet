@@ -1,5 +1,6 @@
 *.o
 *.fastq
+*.ht2
 .Rhistory
 genie3
 .DS_Store
