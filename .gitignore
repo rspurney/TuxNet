@@ -4,7 +4,6 @@
 genie3
 .DS_Store
 TuxNet-HISAT2/.DS_Store
-TuxNet-HISAT2/hisat2-2.1.0
 TuxNet-HISAT2/genome.fa
 TuxNet-HISAT2/bin
 TuxNet-HISAT2/samtools-1.2/misc/md5fa
