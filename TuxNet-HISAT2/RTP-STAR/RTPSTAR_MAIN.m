@@ -152,7 +152,7 @@ end
 if exist('symbol_file','var') && ~isempty(symbol_file)
     symbol = readtable(symbol_file);
 else
-    symbol = table(DE_genes,DE_genes);
+    symbol = table(DE_genes{:,1},DE_genes{:,1});
 end
 
 %if only 1 iteration, only run the pipeline once
