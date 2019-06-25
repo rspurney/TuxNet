@@ -5,9 +5,9 @@ Matlab app to process raw RNA-seq data and infer gene regulatory networks. Publi
 
 ## Local Installation
 
-The local use of TuxNet requires a 64-bit computer running Mac or Linux with MATLAB installed **(R2017b ONLY)**.
+The local use of TuxNet requires a 64-bit computer running Mac or Linux with MATLAB installed **(R2017b or later ONLY)**.
 
-To run TuxNet, download all of the files from the [project repository](https://github.com/rspurney/TuxNet) as a .zip folder, and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then run the TuxNet.mlapp file.
+To run TuxNet, download all of the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then run the TuxNet.mlapp file.
 
 [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX tab can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation. For Mac and Linux, this will be navigating to the downloaded directory via command line and running 'make'. Once this is done, you must copy the HISAT2 folder into the TuxNet-HISAT2 folder and change the HISAT2 folder name to 'hisat2'. Otherwise, TuxNet will not be able to find the HISAT2 files.
 
