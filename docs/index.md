@@ -11,6 +11,10 @@ To run TuxNet, download all of the files from the [project repository](https://g
 
 [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) must be installed before the TUX tab can be run using TuxNet. To install HISAT2, download the correct binary and follow the installation instructions included in the documentation. For Mac and Linux, this will be navigating to the downloaded directory via command line and running 'make'. Once this is done, you must copy the HISAT2 folder into the TuxNet-HISAT2 folder and change the HISAT2 folder name to 'hisat2'. Otherwise, TuxNet will not be able to find the HISAT2 files.
 
+[Cufflinks](https://cole-trapnell-lab.github.io/cufflinks/) must be installed before the TUX tab can be run using TuxNet. To install Cufflinks, download the correct binary and unzip the file. Once this is done, you must copy the Cufflinks folder into the TuxNet-HISAT2 folder and change the Cufflinks folder name to 'cufflinks'. Otherwise, TuxNet will not be able to find the Cufflinks files.
+
+[ea-utils](https://expressionanalysis.github.io/ea-utils/) must be installed before the TUX tab can be run using TuxNet. To install ea-utils, download and unzip the file and follow the installation instructions included in the documentation. For Mac and Linux, this will be navigating to the downloaded directory via command line and running 'make install'. Once this is done, you must copy the ea-utils folder into the TuxNet-HISAT2 folder and change the ea-utils folder name to 'ea-utils'. Otherwise, TuxNet will not be able to find the ea-utils files.
+
 More details on running the software are provided in the following manuscript:
 TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks
 
