@@ -3,4 +3,9 @@
 *.Rhistory
 *.DS_Store
 TuxNet-HISAT2/genome.fa
+TuxNet-HISAT2/genome.fa.fai
+TuxNet-HISAT2/ea-utils
+TuxNet-HISAT2/samtools
+TuxNet-HISAT2/cufflinks
+TuxNet-HISAT2/hisat2
 TuxNet-HISAT2/bin
