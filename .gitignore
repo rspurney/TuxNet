@@ -2,7 +2,6 @@
 *.ht2
 *.Rhistory
 *.DS_Store
-*.fai
 TuxNet-HISAT2/genome.fa
 TuxNet-HISAT2/genome.fa.fai
 TuxNet-HISAT2/ea-utils
