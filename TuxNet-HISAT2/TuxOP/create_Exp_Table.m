@@ -15,7 +15,6 @@ function [ExpressionTable,mk_i,gene_ID,qTable,q_resized] = create_Exp_Table(n_ge
 T = readtable(char(filename),'Delimiter','tab');
 
 c_names = table2cell(T(:,5:6)); % columns that contain the names of the conditions
-%c_names = strcat("DEG_", c_names);
 ind_mk = zeros(size(T,1),n_cond); % matrix to store the indices of a set of rows of length n_genes that have all values for one zone
 
 for i = 1:n_cond-1
