@@ -10,7 +10,7 @@ subFolders(ismember({subFolders.name}, {'.', '..', 'Cleaned', 'Aligned'})) = [];
 if(length(subFolders) < 1)
     message = 'No subfolders found in Inputs Folder.';
     uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-    app.Tux_StatusField_Tuxedo.Value = 'Error';
+    app.Tux_StatusField_Tuxedo.Value = "Error";
     cleaningStatus = 1;
     return;
 end
@@ -23,7 +23,7 @@ for j = 1 : length(subFolders)
     if(length(gzFiles) < 1)
         message = 'No .fastq files found in Inputs Folder.';
         uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-        app.Tux_StatusField_Tuxedo.Value = 'Error';
+        app.Tux_StatusField_Tuxedo.Value = "Error";
         cleaningStatus = 1;
         return;
     end
@@ -46,7 +46,7 @@ for j = 1 : length(subFolders)
             app.Tux_StatusField_Tuxedo.Value = "Cleaning Failed on " + baseFileName;
             message = 'An error occurred during Cleaning.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = 'Error';
+            app.Tux_StatusField_Tuxedo.Value = "Error";
             cleaningStatus = 1;
             return;
         end

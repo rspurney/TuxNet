@@ -13,7 +13,6 @@ subFolders(ismember({subFolders.name}, {'.', '..', 'Cleaned', 'Aligned'})) = [];
 for j = 1 : length(subFolders)
     filePattern = fullfile(mainFolder, subFolders(j).name, '*.fastq*');
     gzFiles = dir(filePattern); % Find all *.fastq files in provided folder
-    %mainFolder = fullfile(mainFolder);
 
     for k = 1 : length(gzFiles)
         % hisat2
@@ -28,7 +27,7 @@ for j = 1 : length(subFolders)
             app.Tux_StatusField_Tuxedo.Value = "hisat2 Failed on " + "Cleaned" + subFolders(j).name + "_" + k + ".fastq";
             message = 'An error occurred during alignment.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = 'Error';
+            app.Tux_StatusField_Tuxedo.Value = "Error";
             alignmentStatus = 1;
             return;
         end
@@ -45,7 +44,7 @@ for j = 1 : length(subFolders)
                 "hisat2Out" + subFolders(j).name + "_" + k + ".sam";
             message = 'An error occurred during sam to bam conversion.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = 'Error';
+            app.Tux_StatusField_Tuxedo.Value = "Error";
             alignmentStatus = 1;
             return;
         end
@@ -62,11 +61,13 @@ for j = 1 : length(subFolders)
                 "hisat2Out" + subFolders(j).name + "_" + k + ".bam";
             message = 'An error occurred during sorting.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = 'Error';
+            app.Tux_StatusField_Tuxedo.Value = "Error";
             alignmentStatus = 1;
             return;
         end
     end
 end
+
+alignmentStatus = 0;
 end
 
