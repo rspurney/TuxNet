@@ -15,7 +15,7 @@ for j = 1 : length(subFolders)
     elseif(readType == '1') % Paired-End
         filePattern = fullfile(mainFolder, subFolders(j).name, 'A_*.fastq*');
     end
-    gzFiles = dir(filePattern); % Find all .gz files in provided folder
+    gzFiles = dir(filePattern); % Find all .fastq files in provided folder
 
     for k = 1 : length(gzFiles)
         app.Tux_StatusField_Tuxedo.Value = "Cufflinks " +...
