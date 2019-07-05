@@ -50,11 +50,11 @@ for j = 1 : length(subFolders)
     end
 end
 cuffdiffStatus = system(cuffdiffCommand);
-if(cuffdiffStatus ~= 0) % If command failed to execute
+if(cuffdiffStatus ~= 0)
     app.Tux_StatusField_Tuxedo.Value = "Cuffdiff Failed";
     message = 'An error occurred during Cuffdiff.';
     uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-    app.Tux_StatusField_Tuxedo.Value = "Error";
+    app.Tux_StatusField_Tuxedo.Value = "Cuffdiff Failed";
     cuffdiffStatus = 1;
     return
 end

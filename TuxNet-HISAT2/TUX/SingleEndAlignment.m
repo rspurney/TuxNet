@@ -23,11 +23,11 @@ for j = 1 : length(subFolders)
             " -2 '" + mainFolderNoSpace + "/Cleaned/Cleaned" + subFolders(j).name + "_" + k + ".fastq'" +...
             " -S " + "hisat2Out" + subFolders(j).name + "_" + k + ".sam";
         alignmentStatus = system(alignmentCommand);
-        if(alignmentStatus ~= 0) % If command failed to execute
-            app.Tux_StatusField_Tuxedo.Value = "hisat2 Failed on " + "Cleaned" + subFolders(j).name + "_" + k + ".fastq";
+        if(alignmentStatus ~= 0)
             message = 'An error occurred during alignment.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = "Error";
+            app.Tux_StatusField_Tuxedo.Value = "hisat2 Failed on " +...
+                "Cleaned" + subFolders(j).name + "_" + k + ".fastq";
             alignmentStatus = 1;
             return;
         end
@@ -39,12 +39,11 @@ for j = 1 : length(subFolders)
         samtoolsCommand = "./samtools/samtools view -bS hisat2Out" + subFolders(j).name + "_" + k + ".sam > hisat2Out" +...
             subFolders(j).name + "_" + k + ".bam";
         samtoolStatus = system(samtoolsCommand);
-        if(samtoolStatus ~= 0) % If command failed to execute
-            app.Tux_StatusField_Tuxedo.Value = "samtools sam to bam Failed on " +...
-                "hisat2Out" + subFolders(j).name + "_" + k + ".sam";
+        if(samtoolStatus ~= 0)
             message = 'An error occurred during sam to bam conversion.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = "Error";
+            app.Tux_StatusField_Tuxedo.Value = "samtools sam to bam Failed on " +...
+                "hisat2Out" + subFolders(j).name + "_" + k + ".sam";
             alignmentStatus = 1;
             return;
         end
@@ -56,12 +55,11 @@ for j = 1 : length(subFolders)
         samtoolsCommand = "./samtools/samtools sort -T temp -o hisat2OutSorted" +...
             subFolders(j).name + "_" + k + ".bam hisat2Out" + subFolders(j).name + "_" + k + ".bam";
         samtoolStatus = system(samtoolsCommand);
-        if(samtoolStatus ~= 0) % If command failed to execute
-            app.Tux_StatusField_Tuxedo.Value = "samtools sort Failed on " +...
-                "hisat2Out" + subFolders(j).name + "_" + k + ".bam";
+        if(samtoolStatus ~= 0)
             message = 'An error occurred during sorting.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = "Error";
+            app.Tux_StatusField_Tuxedo.Value = "samtools sort Failed on " +...
+                "hisat2Out" + subFolders(j).name + "_" + k + ".bam";
             alignmentStatus = 1;
             return;
         end

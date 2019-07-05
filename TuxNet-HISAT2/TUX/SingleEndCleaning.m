@@ -37,11 +37,11 @@ for j = 1 : length(subFolders)
             " -l " + minSeqLength + " -w " + windowSize +...
             " -o " + "Cleaned" + subFolders(j).name + "_" + k + ".fastq;";
         cleaningStatus = system(cleaningCommand);
-        if(cleaningStatus ~= 0) % If command failed to execute
-            app.Tux_StatusField_Tuxedo.Value = "Cleaning Failed on " + baseFileName;
+        if(cleaningStatus ~= 0)
             message = 'An error occurred during Cleaning.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = "Error";
+            app.Tux_StatusField_Tuxedo.Value = "Cleaning Failed on " +...
+                baseFileName;
             cleaningStatus = 1;
             return;
         end

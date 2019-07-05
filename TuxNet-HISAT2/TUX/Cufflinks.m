@@ -27,12 +27,11 @@ for j = 1 : length(subFolders)
             + "'" + mainFolder + "/Aligned/hisat2OutSorted" +...
             subFolders(j).name + "_" + k + ".bam';";
         cufflinksStatus = system(cufflinksCommand);
-        if(cufflinksStatus ~= 0) % If command failed to execute
-            app.Tux_StatusField_Tuxedo.Value = "Cufflinks Failed on " +...
-                "hisat2OutSorted" + subFolders(j).name + "_" + k;
+        if(cufflinksStatus ~= 0)
             message = 'An error occurred during Cufflinks.';
             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = "Error";
+            app.Tux_StatusField_Tuxedo.Value = "Cufflinks Failed on " +...
+                "hisat2OutSorted" + subFolders(j).name + "_" + k;
             cufflinksStatus = 1;
             return
         end
