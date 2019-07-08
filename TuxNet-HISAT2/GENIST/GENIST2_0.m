@@ -394,7 +394,7 @@ if n_clusters > 1
         set(bg1.nodes(i),'Color',[0.71,0.8,1])
         set(bg1.nodes(i),'LineColor',[0,0,0])
     end
-    view(bg1)
+    %view(bg1)
 else
     gene_names = my_AGI_clusters;
     sym = cellstr(symbol);
