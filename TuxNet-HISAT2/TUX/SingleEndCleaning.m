@@ -20,7 +20,7 @@ for j = 1 : length(subFolders)
     filePattern = fullfile(mainFolder, subFolders(j).name, '*.fastq*');
     gzFiles = dir(filePattern); % Find all .fastq files in provided folder
     if(length(gzFiles) < 1)
-        message = 'No .fastq files found in Inputs Folder.';
+        message = char("No .fastq files found in " + subFolders(j).name + ".");
         uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
         app.Tux_StatusField_Tuxedo.Value = "Error";
         cleaningStatus = 1;
