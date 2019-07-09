@@ -13,6 +13,9 @@ The MATLAB [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.h
 
 [ea-utils](https://expressionanalysis.github.io/ea-utils/) must be installed before the TUX tab can be run using TuxNet. To install ea-utils, download and unzip the file and follow the installation instructions included in the documentation. For Mac and Linux, this will involve navigating to the downloaded directory via command line and running 'make install'. **Once this is done, you must copy the ea-utils folder into the TuxNet-HISAT2 folder and change the ea-utils folder name to 'ea-utils'. Otherwise, TuxNet will not be able to find the ea-utils files.**
 
+[SAMtools](http://samtools.sourceforge.net/) must be installed before the TUX tab can be run using TuxNet. To install SAMtools, download and unzip the file and follow the installation instructions included in the documentation. For Mac and Linux, this will involve navigating to the downloaded directory via command line and running 'make install'. **Once this is done, you must copy the SAMtools folder into the TuxNet-HISAT2 folder and change the SAMtools folder name to 'samtools'. Otherwise, TuxNet will not be able to find the SAMtools files.**
+
+
 More details on running the software are provided in the following manuscript:
 TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks
 
