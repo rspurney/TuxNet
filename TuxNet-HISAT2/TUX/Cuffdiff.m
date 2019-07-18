@@ -41,11 +41,11 @@ for j = 1 : length(subFolders)
         if(k == length(gzFiles))
             cuffdiffCommand = cuffdiffCommand + "'" + mainFolder +...
                 "/Aligned/hisat2OutSorted" + subFolders(j).name + "_" +...
-                k + ".bam' \" + "" + newline;
+                k + ".sam' \" + "" + newline;
         else
             cuffdiffCommand = cuffdiffCommand + "'" + mainFolder +...
                 "/Aligned/hisat2OutSorted" + subFolders(j).name + "_" +...
-                k + ".bam'" + ",";
+                k + ".sam'" + ",";
         end
     end
 end
