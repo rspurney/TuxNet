@@ -1,7 +1,6 @@
 function [alignmentStatus] = PairedEndAlignment(app, mainFolder, mainFolderNoSpace, threads)
 %%
-% Calls hisat2 to align cleaned paired-end .fastq files and then converts
-% to .bam and sorts
+% Calls hisat2 to align cleaned paired-end .fastq files and then sorts
 
 %%
 inputFolders = dir(mainFolder); % List of all files and folders in input folder
@@ -13,7 +12,7 @@ subFolders(ismember({subFolders.name}, {'.', '..', 'Cleaned', 'Aligned'})) = [];
 for j = 1 : length(subFolders)
     filePattern = fullfile(mainFolder, subFolders(j).name, 'A_*.fastq*');
     gzFiles = dir(filePattern); % Find all A_*.fastq files in provided folder
-
+    
     for k = 1 : length(gzFiles)
         % hisat2
         app.Tux_StatusField_Tuxedo.Value = "hisat2 " + "Cleaned" + subFolders(j).name + "_" + k + ".fastq...";
@@ -32,28 +31,28 @@ for j = 1 : length(subFolders)
             return;
         end
 
-        % samtools sam to bam
-        app.Tux_StatusField_Tuxedo.Value = "samtools sam to bam " + "hisat2Out" + subFolders(j).name +...
-            "_" + k + ".sam...";
-        drawnow
-        samtoolsCommand = "./samtools/samtools view -bS hisat2Out" + subFolders(j).name + "_" + k + ".sam > hisat2Out" +...
-            subFolders(j).name + "_" + k + ".bam";
-        samtoolStatus = system(samtoolsCommand);
-        if(samtoolStatus ~= 0)
-            message = 'An error occurred during sam to bam conversion.';
-            uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
-            app.Tux_StatusField_Tuxedo.Value = "samtools sam to bam Failed on " +...
-                "hisat2Out" + subFolders(j).name + "_" + k + ".sam";
-            alignmentStatus = 1;
-            return;
-        end
+%         % samtools sam to bam
+%         app.Tux_StatusField_Tuxedo.Value = "samtools sam to bam " + "hisat2Out" + subFolders(j).name +...
+%             "_" + k + ".sam...";
+%         drawnow
+%         samtoolsCommand = "./samtools/samtools view -bS hisat2Out" + subFolders(j).name + "_" + k + ".sam > hisat2Out" +...
+%             subFolders(j).name + "_" + k + ".bam";
+%         samtoolStatus = system(samtoolsCommand);
+%         if(samtoolStatus ~= 0)
+%             message = 'An error occurred during sam to bam conversion.';
+%             uialert(app.UIFigure, message, 'Error', 'Icon', 'error');
+%             app.Tux_StatusField_Tuxedo.Value = "samtools sam to bam Failed on " +...
+%                 "hisat2Out" + subFolders(j).name + "_" + k + ".sam";
+%             alignmentStatus = 1;
+%             return;
+%         end
 
         % samtools sort
-        app.Tux_StatusField_Tuxedo.Value = "samtools sort bam " + "hisat2Out" + subFolders(j).name +...
-             "_" + k + ".bam...";
+        app.Tux_StatusField_Tuxedo.Value = "samtools sort " + "hisat2Out" + subFolders(j).name +...
+             "_" + k + ".sam...";
         drawnow
-        samtoolsCommand = "./samtools/samtools sort -T temp -o hisat2OutSorted" +...
-            subFolders(j).name + "_" + k + ".bam hisat2Out" + subFolders(j).name + "_" + k + ".bam";
+        samtoolsCommand = "./samtools/samtools sort -T temp -O sam -o hisat2OutSorted" +...
+            subFolders(j).name + "_" + k + ".sam hisat2Out" + subFolders(j).name + "_" + k + ".sam";
         samtoolStatus = system(samtoolsCommand);
         if(samtoolStatus ~= 0)
             message = 'An error occurred during sorting.';
@@ -64,6 +63,10 @@ for j = 1 : length(subFolders)
             return;
         end
     end
+    % Move output files to inputs folder for each group
+    mainFolderAligned = fullfile(mainFolder, '/Aligned');
+    movefile('hisat2*.sam', char(mainFolderAligned));
+    %movefile('hisat2*.bam', char(mainFolderAligned));
 end
 
 alignmentStatus = 0;
