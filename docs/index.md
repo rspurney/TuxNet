@@ -26,6 +26,7 @@ The GENIST tab implements a Dynamic Bayesian network (DBN)-based inference algor
 ## RTP-STAR
 The RTP-STAR tab implements a regression tree algorithm (GENIE3) and uses biological replicates of steady state gene expression data to infer GRNs for a listo of genes. The output of TUX can be directly imported into RTP-STAR to predict causal relations and the output of RTP-STAR can be imported into programs like Cytoscape for visualization.
 
+
 More details on running the software are provided in the following manuscript:
 **TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks**
 
