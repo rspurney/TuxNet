@@ -1,14 +1,26 @@
 # TuxNet
 Matlab app to process raw RNA-seq data and infer gene regulatory networks. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
 
+## Table of Contents
+* [Local Installation](#local-installation)
+  * [Mac and Linux](#mac-and-linux)
+    * [MATLAB Version](#matlab-version)
+    * [Standalone Version](#standalone-version)
+    * [Required Software](#required-software)
+  * [Windows](#windows)
+* [TUX](#tux)
+* [GENIST](#genist)
+* [RTP-STAR](#rtp-star)
+* [Additional Info](#additional-info)
+
 ## Local Installation
 
-### Mac / Linux
+### Mac and Linux
 
 #### MATLAB Version
 The use of the MATLAB version of TuxNet requires a 64-bit computer running Mac or Linux with MATLAB installed **(R2017b or later ONLY)**.
 
-#### Mac / Linux Standalone Version
+#### Standalone Version
 The use of the Mac / Linux Standalone version of TuxNet requires a 64-bit computer running Mac or Linux.
 
 #### Required Software
@@ -18,7 +30,7 @@ To run the Mac / Linux MATLAB or Standalone version of TuxNet, download all of t
 
 The MATLAB [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.html) and [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html) are both required to run GENIST and RTP-STAR on the MATLAB version of TuxNet.
 
-### Windows Standalone Version
+### Windows
 stuff about windows version
 
 ## TUX
