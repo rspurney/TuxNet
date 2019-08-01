@@ -1,5 +1,3 @@
-# Unfortunately, TuxNet access via TeamViewer has been permanently disabled. A new method for accessing TuxNet online is currently in development and will be described here once completed. TuxNet can still be downloaded for local use via the GitHub link on this page.
-
 # TuxNet
 Matlab app to process raw RNA-seq data and infer gene regulatory networks. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
 
@@ -19,12 +17,18 @@ The MATLAB [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.h
 
 [SAMtools](http://samtools.sourceforge.net/) must be installed before the TUX tab can be run using TuxNet. To install SAMtools, download and unzip the file and follow the installation instructions included in the documentation. For Mac and Linux, this will involve navigating to the downloaded directory via command line and running 'make install'. **Once this is done, you must copy the SAMtools folder into the TuxNet-HISAT2 folder and change the SAMtools folder name to 'samtools'. Otherwise, TuxNet will not be able to find the SAMtools files.**
 
+## TUX
+
+## GENIST
+
+## RTP-STAR
+
 More details on running the software are provided in the following manuscript:
 TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks
 
 ## Contact Info
 
-Please contact Ryan Spurney at <rjspurne@ncsu.edu> or Dr. Ross Sozzani at <rsozzan@ncsu.edu> with any questions or issues.
+Please contact Ryan Spurney at <rjspurne@ncsu.edu> or Dr. Ross Sozzani at <ross_sozzani@ncsu.edu> with any questions or issues.
 
 ----------------------------------------------------------------------------------------------------------------------------
 REFERENCES:
