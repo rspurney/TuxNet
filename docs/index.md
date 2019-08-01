@@ -26,7 +26,7 @@ The use of the Mac / Linux Standalone version of TuxNet requires a 64-bit comput
 #### Required Software
 To run the Mac / Linux MATLAB or Standalone version of TuxNet, download all of the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip the folder. To run TuxNet for the first time using Arabidopsis data, unzip genome.fa.zip (included in the folder). Then, run the TuxNet.mlapp file.
 
-[HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml), [Cufflinks](https://cole-trapnell-lab.github.io/cufflinks/), [ea-utils](https://expressionanalysis.github.io/ea-utils/), and [SAMtools](http://samtools.sourceforge.net/) must be installed before the TUX tab can be run using TuxNet. <span style="color:#39c">Once these are downloaded and installed, you must copy the folders into the folder where TuxNet is located and change the folder names to 'hisat2', ' cufflinks', 'ea-utils', and 'samtools', respectively. Otherwise, TuxNet will not be able to find the needed files.</span>
+[HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml), [Cufflinks](https://cole-trapnell-lab.github.io/cufflinks/), [ea-utils](https://expressionanalysis.github.io/ea-utils/), and [SAMtools](http://samtools.sourceforge.net/) must be installed before the TUX tab can be run using TuxNet. <span style="color:#267CB9">Once these are downloaded and installed, you must copy the folders into the folder where TuxNet is located and change the folder names to 'hisat2', ' cufflinks', 'ea-utils', and 'samtools', respectively. Otherwise, TuxNet will not be able to find the needed files.</span>
 
 The MATLAB [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.html) and [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html) are both required to run GENIST and RTP-STAR on the MATLAB version of TuxNet.
 
@@ -34,13 +34,13 @@ The MATLAB [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.h
 stuff about windows version
 
 ## TUX
-The TUX tab <span style="color:#39c">processes raw RNAseq data</span> using fastq-mcf and a modified Tuxedo pipeline (HISAT2 + Cufflinks package) to extract a wide array of information including measures of differential expression. This output can then be used by TuxOP to tabulate FPKM values, average gene expression, and differentially expressed genes (DEGs) between states of an experiment.
+The TUX tab <span style="color:#267CB9">processes raw RNAseq data</span> using fastq-mcf and a modified Tuxedo pipeline (HISAT2 + Cufflinks package) to extract a wide array of information including measures of differential expression. This output can then be used by TuxOP to tabulate FPKM values, average gene expression, and differentially expressed genes (DEGs) between states of an experiment.
 
 ## GENIST
-The GENIST tab implements a <span style="color:#39c">Dynamic Bayesian network (DBN)-based inference algorithm</span> that uses <span style="color:#39c">time-course data to infer GRNs</span> for a list of genes. The output of TUX can be directly imported into GENIST to <span style="color:#39c">predict causal relations</span> and the output of GENIST can be imported into programs like Cytoscape for visualization.
+The GENIST tab implements a <span style="color:#267CB9">Dynamic Bayesian network (DBN)-based inference algorithm</span> that uses <span style="color:#267CB9">time-course data to infer GRNs</span> for a list of genes. The output of TUX can be directly imported into GENIST to <span style="color:#267CB9">predict causal relations</span> and the output of GENIST can be imported into programs like Cytoscape for visualization.
 
 ## RTP-STAR
-The RTP-STAR tab implements a <span style="color:#39c">regression tree algorithm</span> (GENIE3) and uses <span style="color:#39c">biological replicates of steady state gene expression data to infer GRNs</span> for a list of genes. The output of TUX can be directly imported into RTP-STAR to <span style="color:#39c">predict causal relations</span> and the output of RTP-STAR can be imported into programs like Cytoscape for visualization.
+The RTP-STAR tab implements a <span style="color:#267CB9">regression tree algorithm</span> (GENIE3) and uses <span style="color:#267CB9">biological replicates of steady state gene expression data to infer GRNs</span> for a list of genes. The output of TUX can be directly imported into RTP-STAR to <span style="color:#267CB9">predict causal relations</span> and the output of RTP-STAR can be imported into programs like Cytoscape for visualization.
 
 ## Additional Info
 
