@@ -16,7 +16,7 @@ The MATLAB [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.h
 [SAMtools](http://samtools.sourceforge.net/) must be installed before the TUX tab can be run using TuxNet. To install SAMtools, download and unzip the file and follow the installation instructions included in the documentation. For Mac and Linux, this will involve navigating to the downloaded directory via command line and running 'make install'. **Once this is done, you must copy the SAMtools folder into the TuxNet-HISAT2 folder and change the SAMtools folder name to 'samtools'. Otherwise, TuxNet will not be able to find the SAMtools files.**
 
 ## TUX
-The TUX tab <span style="color:blue">processes raw RNAseq data</span> using fastq-mcf and a modified Tuxedo pipeline (HISAT2 + Cufflinks package) to extract a wide array of information including measures of differential expression. This output can then be used by TuxOP to tabulate FPKM values, average gene expression, and differentially expressed genes (DEGs) between states of an experiment.
+The TUX tab processes raw RNAseq data using fastq-mcf and a modified Tuxedo pipeline (HISAT2 + Cufflinks package) to extract a wide array of information including measures of differential expression. This output can then be used by TuxOP to tabulate FPKM values, average gene expression, and differentially expressed genes (DEGs) between states of an experiment.
 
 ## GENIST
 The GENIST tab implements a Dynamic Bayesian network (DBN)-based inference algorithm that uses time-course data to infer GRNs for a list of genes. The output of TUX can be directly imported into GENIST to predict causal relations and the output of GENIST can be imported into programs like Cytoscape for visualization.
