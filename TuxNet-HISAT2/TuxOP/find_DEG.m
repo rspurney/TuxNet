@@ -182,7 +182,7 @@ for comparison_direction = 1:2
     end
     
     filename = char(strcat('DEG_',filename_interest,'_vs_',filename_compare,'.xlsx'));
-    writetable(DE_Table,filename,'Sheet','Genes');
+    writetable(DE_Table,filename,'Sheet',1); % Changed to first sheet instead of 'Genes'
     writetable(DE_TF_Table,filename,'Sheet','TFs');
 end
 end
