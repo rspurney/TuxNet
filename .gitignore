@@ -2,10 +2,10 @@
 *.ht2
 *.Rhistory
 *.DS_Store
-TuxNet-HISAT2/genome.fa
-TuxNet-HISAT2/genome.fa.fai
-TuxNet-HISAT2/ea-utils
-TuxNet-HISAT2/samtools
-TuxNet-HISAT2/cufflinks
-TuxNet-HISAT2/hisat2
-TuxNet-HISAT2/bin
+TuxNet-MATLAB/genome.fa
+TuxNet-MATLAB/genome.fa.fai
+TuxNet-MATLAB/ea-utils
+TuxNet-MATLAB/samtools
+TuxNet-MATLAB/cufflinks
+TuxNet-MATLAB/hisat2
+TuxNet-MATLAB/bin
