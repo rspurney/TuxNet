@@ -6,7 +6,7 @@ Matlab app to process raw RNA-seq data and infer gene regulatory networks. Publi
   * [MATLAB Version](#matlab-version)
   * [Mac Standalone Version](#mac-standalone-version)
   * [Linux Standalone Version](#linux-standalone-version)
-  * [Windows Standlone Version](#windows-standalone-version)
+  * [Windows Standalone Version](#windows-standalone-version)
   * [Required Software](#required-software)
   * [Video Tutorial](#video-tutorial)
 * [TUX](#tux)
@@ -41,7 +41,7 @@ To install the Linux Standalone version of TuxNet, execute `sudo ./TuxNet-LinuxS
 
 To run TuxNet, navigate to the `<TuxNetLocation>/application` directory where `<TuxNetLocation>` is the folder you chose to install TuxNet and execute `sudo ./run_TuxNet.sh <mcr_directory>` where `<mcr_directory>` is the location where MATLAB Runtime is installed. For example: `sudo ./run_TuxNet.sh /home/user/username/MATLAB_Runtime/v96`. You will be prompted to choose the current working directory via a file finder: `<TuxNetLocation>/application` should be your selection.
 
-### Windows
+### Windows Standalone Version
 
 Download all of the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip the folder.
 
