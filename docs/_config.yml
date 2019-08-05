@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: TuxNet Graphical User Interface
 description: A graphical user interface for processing RNA-seq data.
 logo: "media/blocks.jpg"
