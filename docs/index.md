@@ -9,6 +9,7 @@ Matlab app to process raw RNA-seq data and infer gene regulatory networks. Publi
     * [Required Software and Installation](#required-software-and-installation)
   * [Windows](#windows)
     * [Installation](#installation)
+  * [Video Tutorial](#video-tutorial)
 * [TUX](#tux)
 * [GENIST](#genist)
 * [RTP-STAR](#rtp-star)
@@ -41,6 +42,11 @@ To install the Linux Standalone version of TuxNet, execute `sudo ./TuxNet-LinuxS
 Download all of the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip the folder.
 
 To install, run `TuxNet-WindowsStandaloneInstaller.exe` in the `TuxNet-WindowsStandalone` directory. You will be prompted to choose a directory where TuxNet will be installed and to install MATLAB Runtime if it is not already installed. Note that the Windows Standalone version of TuxNet cannot run the modified Tuxedo pipeline. To run TuxNet, run `TuxNet.exe` in the `<TuxNetLocation>/application` directory where `<TuxNetLocation>` is the folder you chose to install TuxNet. You will be prompted to choose the current working directory via a file finder: `<TuxNetLocation>/application` should be your selection.
+
+### Video Tutorial
+Follow this tutorial to learn how to install and run the MATLAB and Standalone versions of TuxNet for Mac. The steps to install the Linux and Windows versions are similar and require only slight modification, detailed above.
+
+video
  
 ## TUX
 The TUX tab **processes raw RNAseq data** using fastq-mcf and a modified Tuxedo pipeline (HISAT2 + Cufflinks package) to extract a wide array of information including measures of differential expression. This output can then be used by TuxOP to tabulate FPKM values, average gene expression, and differentially expressed genes (DEGs) between states of an experiment.
