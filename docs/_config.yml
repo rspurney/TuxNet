@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
-title: TuxNet Graphical User Interface
-description: A graphical user interface for processing RNA-seq data.
-logo: "media/blocks.jpg"
+title: TuxNet
+description: A graphical user interface for processing RNAseq data and inferring GRNs
+#logo: "media/blocks.jpg"
