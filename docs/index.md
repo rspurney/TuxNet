@@ -1,5 +1,5 @@
 # TuxNet
-Matlab app to process raw RNA-seq data and infer gene regulatory networks. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
+MATLAB app to process raw RNA sequencing data and infer gene regulatory networks. Published and maintained by [Sozzani Lab](https://harvest.cals.ncsu.edu/sozzani-lab/) at North Carolina State University.
 
 ## Table of Contents
 * [Local Installation](#local-installation)
