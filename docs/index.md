@@ -55,22 +55,22 @@ To use TuxNet, run `TuxNet.exe` in the `<TuxNetLocation>/application` directory 
 ### Video Tutorial
 Follow this tutorial to learn how to install and run the MATLAB and Standalone versions of TuxNet for Mac. The steps to install the Linux and Windows versions are similar and require only slight modification, detailed above.
 
-video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/twsYTAxroF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 ## TUX
 The TUX tab **processes raw RNAseq data** using fastq-mcf and a modified Tuxedo pipeline (HISAT2 + Cufflinks package) to extract a wide array of information including measures of differential expression. This output can then be used by TuxOP to tabulate FPKM values, average gene expression, and differentially expressed genes (DEGs) between states of an experiment.
 
-video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qao-CVzts1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## GENIST
 The GENIST tab implements a **Dynamic Bayesian network (DBN)-based inference algorithm** that uses **time-course data to infer GRNs** for a list of genes. The output of TUX can be directly imported into GENIST to **predict causal relations** and the output of GENIST can be imported into programs like Cytoscape for visualization.
 
-video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b5iMvsaiBf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## RTP-STAR
 The RTP-STAR tab implements a **regression tree algorithm** (GENIE3) and uses **biological replicates of steady state gene expression data to infer GRNs** for a list of genes. The output of TUX can be directly imported into RTP-STAR to **predict causal relations** and the output of RTP-STAR can be imported into programs like Cytoscape for visualization.
 
-video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UOdSxLyAhq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Additional Info
 
