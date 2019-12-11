@@ -77,7 +77,7 @@ The RTP-STAR tab implements a **regression tree algorithm** (GENIE3) and uses **
 More details on running the software are provided in the following manuscript:
 *TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks*
 
-Please contact Ryan Spurney at <rjspurne@ncsu.edu> or Dr. Ross Sozzani at <ross_sozzani@ncsu.edu> with any questions or issues.
+Please contact Ryan Spurney at <rjspurne@ncsu.edu>, Dr. Lisa Van den Broeck at <lfvanden@ncsu.edu>, or Dr. Ross Sozzani at <ross_sozzani@ncsu.edu> with any questions or issues.
 
 ----------------------------------------------------------------------------------------------------------------------------
 REFERENCES:
