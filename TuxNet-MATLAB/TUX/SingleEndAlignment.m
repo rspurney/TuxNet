@@ -64,8 +64,10 @@ for j = 1 : length(subFolders)
     end
     % Move output files to inputs folder for each group
     mainFolderAligned = fullfile(mainFolder, '/Aligned');
-    movefile('hisat2*.sam', char(mainFolderAligned));
-    %movefile('hisat2*.bam', char(mainFolderAligned));
+    if(~isempty(dir('*.sam')))
+        movefile('hisat2*.sam', char(mainFolderAligned));
+        %movefile('hisat2*.bam', char(mainFolderAligned));
+    end
 end
 
 alignmentStatus = 0;
