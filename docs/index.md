@@ -80,5 +80,5 @@ More details on running the software are provided in the following manuscript:
 Please contact Ryan Spurney at <rjspurne@ncsu.edu>, Dr. Lisa Van den Broeck at <lfvanden@ncsu.edu>, or Dr. Ross Sozzani at <ross_sozzani@ncsu.edu> with any questions or issues.
 
 ----------------------------------------------------------------------------------------------------------------------------
-REFERENCES:
-TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks
+HOW TO CITE:
+Spurney, R.J., Van den Broeck, L., Clark, N.M., Fisher, A.P., de Luis Balaguer, M.A. and Sozzani, R. (2019), Tuxnet: a simple interface to process RNA sequencing data and infer gene regulatory networks. Plant J. doi:10.1111/tpj.14558
