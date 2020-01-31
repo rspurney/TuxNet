@@ -81,4 +81,4 @@ Please contact Ryan Spurney at <rjspurne@ncsu.edu>, Dr. Lisa Van den Broeck at <
 
 ----------------------------------------------------------------------------------------------------------------------------
 HOW TO CITE:
-Spurney, R.J., Van den Broeck, L., Clark, N.M., Fisher, A.P., de Luis Balaguer, M.A. and Sozzani, R. (2019), Tuxnet: a simple interface to process RNA sequencing data and infer gene regulatory networks. Plant J. doi:10.1111/tpj.14558
+Spurney, R.J., Van den Broeck, L., Clark, N.M., Fisher, A.P., de Luis Balaguer, M.A. and Sozzani, R. (2019), Tuxnet: a simple interface to process RNA sequencing data and infer gene regulatory networks. Plant J. https://doi.org/10.1111/tpj.14558
