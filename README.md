@@ -43,7 +43,7 @@ To use TuxNet, navigate to the `<TuxNetLocation>/application` directory where `<
 
 ### Windows Standalone Version
 
-Download the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip.
+Download the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip. NOTE: TuxNet Windows Standalone Version is only tested with Windows 10 and higher.
 
 To install, run `TuxNet-WindowsStandaloneInstaller.exe` in the `TuxNet-WindowsStandalone` directory. You will be prompted to choose a directory where TuxNet will be installed and to install MATLAB Runtime if it is not already installed. Note that the Windows Standalone version of TuxNet cannot run the modified Tuxedo pipeline. 
 
@@ -66,7 +66,7 @@ The RTP-STAR tab implements a **regression tree algorithm** (GENIE3) and uses **
 More details on running the software are provided in the following manuscript:
 *TuxNet: A simple interface to process RNA sequencing data and infer gene regulatory networks*
 
-Please contact Ryan Spurney at <rjspurne@ncsu.edu> or Dr. Ross Sozzani at <ross_sozzani@ncsu.edu> with any questions or issues.
+Please contact Dr. Ross Sozzani at <ross_sozzani@ncsu.edu> with any questions or issues.
 
 ----------------------------------------------------------------------------------------------------------------------------
 REFERENCES:
