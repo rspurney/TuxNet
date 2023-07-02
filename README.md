@@ -17,7 +17,7 @@ MATLAB app to process raw RNA sequencing data and infer gene regulatory networks
 ## Local Installation
 
 ### MATLAB Version
-The use of the MATLAB version of TuxNet requires a 64-bit computer running Mac or Linux **with MATLAB installed (R2017b or later)**.
+The use of the MATLAB version of TuxNet requires a 64-bit computer running Mac or Linux **with MATLAB installed (R2017b up until R2022a).** In addition, two MATLAB toolboxes need to be installed: the [Bioinformatics toolbox](https://www.mathworks.com/products/bioinfo.html) and the [Statistics and Machine Learning toolbox](https://www.mathworks.com/products/statistics.html).
 
 Download the files from the [project repository](https://github.com/rspurney/TuxNet) and unzip. To run TuxNet using Arabidopsis data, unzip `genome.fa.zip`.
 
